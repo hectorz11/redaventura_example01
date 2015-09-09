@@ -1,0 +1,12 @@
+.formulario-search {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    margin-bottom: 2rem;
+}
+
+#InputSearch-button {
+    height: auto;
+    border-radius: 0;
+}
