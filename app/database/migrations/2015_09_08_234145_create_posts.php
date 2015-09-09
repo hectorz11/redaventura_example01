@@ -16,6 +16,7 @@ class CreatePosts extends Migration {
 		{
 			$table->increments('id');
 			$table->string('title')->nullable();
+			$table->string('image_url')->nullable();
 			$table->text('body')->nullable();
 			$table->integer('user_id')->unsigned();
 			$table->integer('status')->unsigned();
