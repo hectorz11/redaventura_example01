@@ -44,7 +44,7 @@ function postTemplate (post) {
     html += "<article class='feature left'>";
     html += "<span class='image'><img src="+ post.image_url +" alt="+ post.title +" /></span>";
     html += "<div class='content'>";
-    html += "<h2>"+ post.title +"</h2>";
+    html += "<h2 contenteditable>"+ post.title +"</h2>";
     html += "<p>"+ post.body +"</p>";
     html += "<ul class='actions'>";
     html += "<li><a href='#' class='button alt'>More</a></li>";

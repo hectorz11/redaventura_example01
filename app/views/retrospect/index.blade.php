@@ -46,11 +46,12 @@
 					</div>
 				</div>
 				<div id="ResulOut" class="inner">
+					@foreach($posts as $post)
 					<article class="feature left">
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+						<span class="image"><img src="{{ $post->image_url }}" alt="" /></span>
 						<div class="content">
-							<h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
+							<h2>{{ $post->title }}</h2>
+							<p>{{ $post->body }}</p>
 							<ul class="actions">
 								<li>
 									<a href="#" class="button alt">More</a>
@@ -58,18 +59,7 @@
 							</ul>
 						</div>
 					</article>
-					<article class="feature right">
-						<span class="image"><img src="images/pic02.jpg" alt="" /></span>
-						<div class="content">
-							<h2>Integer vitae libero acrisus egestas placerat  sollicitudin</h2>
-							<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est.</p>
-							<ul class="actions">
-								<li>
-									<a href="#" class="button alt">More</a>
-								</li>
-							</ul>
-						</div>
-					</article>
+					@endforeach
 				</div>
 			</section>
 

@@ -13,7 +13,9 @@
 
 Route::get('/', function()
 {
-	return View::make('retrospect.index');
+	$posts = Post::all();
+
+	return View::make('retrospect.index', ["posts" => $posts]);
 });
 
 Route::group(array('prefix' => '/api/v1'), function() {
