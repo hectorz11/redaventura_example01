@@ -11,8 +11,6 @@ class PostController extends \BaseController {
 		}
 	}
 
-	
-
 	public function store()
 	{
 		$answer = Post::createPost(Input::all());
