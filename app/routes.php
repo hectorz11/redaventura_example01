@@ -42,9 +42,9 @@ Route::group(array('prefix' => '/api/v1'), function() {
 			'as' => 'posts.show', 'uses' => 'PostController@show'));
 		Route::post('/', array(
 			'as' => 'posts.store', 'uses' => 'PostController@store'));
-		Route::patch('/{id}', array(
-			'as' => 'posts.update', 'uses' => 'PostController@update'));
 		Route::put('/{id}', array(
+			'as' => 'posts.update', 'uses' => 'PostController@update'));
+		Route::patch('/{id}', array(
 			'as' => 'posts.path', 'uses' => 'PostController@patch'));
 		Route::delete('/{id}', array(
 			'as' => 'posts.delete', 'uses' => 'PostController@delete'));
